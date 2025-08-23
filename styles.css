@@ -285,6 +285,19 @@ body {
   transform: translateY(-3px);
 }
 
+.social-icons a {
+  color: #E4405F;   /* Instagram pinkish red */
+  font-size: 30px;  /* icon size */
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #c13584;   /* darker on hover */
+}
+
+
 /* ✅ Footer */
 footer {
   margin-top: auto;
