@@ -1,0 +1,217 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        /* .header {
+            background: #fcfefe;
+            color: #66bfbf;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #66bfbf;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #66bfbf;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        } */
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: white;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+
+        /* Contributor Section */
+        .contributor-section {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            padding: 0 2rem;
+        }
+
+        .contributor-image {
+            flex: 0 0 300px;
+        }
+
+        .contributor-image img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .contributor-content {
+            flex: 1;
+        }
+
+        .contributor-content h2 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .contributor-title {
+            font-size: 1.1rem;
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .contributor-content p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 1.2rem;
+        }
+
+        /* Key Points Section */
+        .key-points-section {
+            background: #ecf0f1;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem;
+        }
+
+        .key-points-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .key-points-header h3 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .key-points-header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        .key-points-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .key-point {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .key-point:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .key-point-icon {
+            width: 70px;
+            height: 70px;
+            background: #3498db;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .key-point h4 {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .key-point p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contributor-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contributor-image {
+                flex: none;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            /* .about-header h1 {
+                font-size: 2rem;
+            } */
+
+            .key-points-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .achievements {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contributor-image {
+                flex: 0 0 250px;
+            }
+
+            .contributor-image img {
+                height: 280px;
+            }
+        }
