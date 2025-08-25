@@ -297,6 +297,15 @@ body {
   color: #c13584;   /* darker on hover */
 }
 
+.social-icons a[href*="linkedin"] {
+  color: #0A66C2;  /* LinkedIn Blue */
+}
+
+.social-icons a[href*="linkedin"]:hover {
+  color: #004182;  /* Darker on hover */
+}
+
+
 
 /* ✅ Footer */
 footer {
